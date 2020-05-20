@@ -83,7 +83,5 @@ python manage.py startapp [appname]
    TIME_ZONE = 'Asia/Shanghai'
    ```
 
-## 创建模型
-
 
 
