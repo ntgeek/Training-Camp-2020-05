@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Helloworld</title>
-</head>
-<body>
-    <h1>{{ hello }}</h1>
-</body>
-</html>
+{% extends "newhello.html" %}
+    {% block mainbody %}
+    <p>这是源文件里面的内容</p>
+    {% endblock %}
+    <p>外面的内容</p>
