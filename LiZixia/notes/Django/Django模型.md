@@ -29,3 +29,13 @@ DATABASES = {
 django-admin startapp appname
 ```
 
+类名代表了数据库表名，且继承了`models.Model`，类里面的字段代表数据表中的字段(name)，数据类型则由`CharField`（相当于varchar）、`DateField`（相当于datetime）， `max_length` 参数限定长度。
+
+### 数据库创建
+
+```
+$ python manage.py migrate   # 创建表结构
+$ python manage.py makemigrations TestModel  # 让 Django 知道我们在我们的模型有一些变更
+$ python manage.py migrate TestModel   # 创建表结构
+```
+
